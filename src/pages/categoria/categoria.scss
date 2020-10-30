@@ -1,0 +1,56 @@
+page-categoria {
+    padding: 0;
+    margin: 0;
+}
+
+//Estilos de la pagina categoria
+.bodyCategoria{
+    background-image: url("../assets/imgs/fondos.jpg")
+}
+ion-header{
+    background-color:  #20bcd5;
+}
+.titleCat{
+    text-align: left;
+    padding: 1px 3px 2px;
+}
+.iconH{
+    color: blue;
+}
+.bntH{
+
+   background-color: transparent !important;
+}
+.men{
+    text-align: left;
+}
+
+.home ion-icon{
+    text-align: left;
+    padding: 0px 0px;
+    font-size: 30px;
+}
+
+ion-content h2{
+    font-size: 30px;
+}
+.categorias{
+   height: 80%;
+   padding: 17px 10px;
+}
+.categorias button{
+    background-color: rgb(11, 172, 247);
+    color: rgb(231, 245, 245);
+    font-size: 15pt;
+    height: 50px;;
+}
+
+.cat1{
+    padding: 10px 0px;
+    font:bold;
+}
+
+.categorias ion-icon{
+    color: red;
+    padding: 0px 5px;
+}

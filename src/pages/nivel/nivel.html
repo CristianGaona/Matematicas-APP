@@ -1,0 +1,40 @@
+<!--
+  Generated template for the NivelPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <ion-navbar>
+    <ul>
+      <li>
+        <ion-title>Nivel</ion-title>
+      </li>
+      <li class="homeN"> <button (click)="goHomeN()" class="bntH">
+          <ion-icon name="home" class="iconH"><br></ion-icon>
+        </button>
+
+      </li>
+    </ul>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding class="bodyNivel">
+  <!-- <h2><b>Seleccione Nivel de Complejidad</b></h2>-->
+  <article class="section">
+    <span>
+      <h2><b>Nivel de Juego</b></h2>
+    </span>
+    <div class="niveles">
+      <!--Botones para selccionar la complejidad del juego-->
+      <div class="niv"> <button ion-button block icon-start round outline (click)="bntLevel1()"><b>Fácil(1-10)</b></button></div>
+      <div class="niv"><button ion-button block icon-start round outline (click)="bntLevel2()"><b>Medio(10-20)</b></button></div>
+      <div class="niv"><button ion-button block icon-start round outline (click)="bntLevel3()"><b>Profesional(20-40)</b></button></div>
+      <div class="niv"><button ion-button block icon-start round outline (click)="bntLevel4()"><b> Experto(50-100)</b></button></div>
+
+    </div>
+  </article>
+
+
+</ion-content>

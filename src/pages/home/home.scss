@@ -1,0 +1,235 @@
+* {
+    
+    padding: 0;
+    margin: 0;
+    animation: colorchange 50s; 
+   
+}
+
+//Estilos de la pagina principal del juego (HomePage)
+
+//Estilos del header
+ion-header{
+    background-color:  #20bcd5;
+}
+.bodyHome{
+    background-image: url("../assets/imgs/cute.jpg")
+}
+ion-content, ion-header{
+
+    font-family: "Handlee";
+    font-size: 13pt;
+    padding: 10px;
+    margin: 0;
+}
+
+//Estilos navbar
+ion-navbar ion-title,h1{
+text-align-last: center;
+color: #FF7433;
+}
+
+//estilos de la imagen de fondo del encabezado
+#encabezado {
+    background-image: url("../assets/imgs/header.jpg");
+    background-size: cover;
+    border: 10px groove#20bcd5;
+    //padding: 10px;
+    border-radius: 10px;
+}
+
+//Estilos del logo de calandria
+#encabezado img {
+    display: block;
+    width: 160px;
+    height: 100px;
+    margin: auto;
+}
+ 
+//Estilo de titulo (Modo de Juego)
+h2 {
+    font-size: 15pt;
+    color: #3fb6b2;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+
+//Estilos del bloque (Modo de Juego)
+span h2 {
+    border: 4px outset #20bcd5;
+    padding: 10px;
+    background-color: #f3fdf6;
+}
+
+//Estilos para todas las etiquetas con nombre de clase section (estandar)
+.section {
+    background-color: rgb(243,111,72);
+   // background-color: rgb(187, 78, 27);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+// Estilo del article para el borde del bloque
+
+article{
+    border: 10px groove #20bcd5;
+}
+
+.parrP{
+color:white;
+}
+
+// Estilos a para el bloque que contiene la imagen avatar
+#avatar img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+//Estilos para el borde de la imagen avatar
+.img-circle {
+    border-radius: 50%;
+   border: 10px inset#20bcd5;
+}
+
+// Estilos al formulario
+form {
+    text-align: center;
+    margin-top: 0;
+}
+
+//Estilos al botón submit
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+
+//Estilo de efecto para el botón submit
+.submit:hover {
+    background-color: #43a09d;
+}
+
+//Estilo al etiqueta input del formulario
+ input{
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+
+//Estilos al footer
+footer{
+    border:4px solid  #20bcd5;
+}
+footer
+{
+    //margin-top:50px;
+    width:100%;
+   // height: 30%;
+    background-color: rgb(14, 2, 65);
+    border-radius: 10px;
+}
+
+// Estilos al bloque con el nombre de clase coyright
+.copyright {
+
+    font-size: 7pt;
+    color: rgb(242, 248, 248);
+}
+
+//Estilos a la ikmaggen que contiene el bloque
+footer img {
+    width: 40px;
+    height: 20px;
+    margin: left;
+   padding: 2px 2px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul{
+	display: table;
+    width: 100%;
+    height: 100%;
+	position: relative;
+}
+footer ul li{
+	display: table-cell;
+}
+
+.teacherimg{
+    width: 40%;
+
+}
+
+
+.inicioAlert{
+    // background-color: rgba(0, 0, 0, .85);
+     .alert-wrapper{
+         font-family: 'Merriweather', serif;
+         border: none;
+         display: flex;
+         justify-content: center;
+         align-content: center;
+         flex-direction: column;
+         text-shadow: 1.5px 1px #999;
+         text-align: center;
+         background-color: white;
+         border: 5px solid #03b6ec;
+         border-radius: 12px;
+         background-image: url('../../assets/imgs/num1.gif');
+         height: 400px;
+     }
+     .alert-title{
+         color: red;
+         text-align: center;
+         font-family: 'Luckiest Guy';
+         background-color: white
+       }
+     .alert-message {
+         background-color: white;
+         color: black;
+         background-repeat: no-repeat;
+         background-position: top;
+         background-size: 80%;
+         margin: 0 auto;
+         height: 300px;
+         width: 100%;
+         font-family: 'Luckiest Guy';
+         font-size: 1.2em;
+     }
+     .alert-button{
+         background-color: rgb(35, 233, 68);
+         //text-align: center;
+         font-family: 'Luckiest Guy';
+         font-weight: bold;
+         //width: 100%;
+         font-size: 2.5em;
+         margin:10px auto;
+         display:block;
+         border: 2px solid red;
+         border-radius: 5px;
+        
+     }
+     
+  }
+
+

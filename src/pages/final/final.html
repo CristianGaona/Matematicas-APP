@@ -1,0 +1,58 @@
+<!--
+  Pagina que muestra los resultados finales obtenidos por el jugador
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <ion-navbar>
+    <ion-title>Final</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding class="bodyFinal">
+  <!--Imagen, se muestra cuando todas las operaciones básicas son correctas-->
+  <ion-card *ngIf="correcta==5">
+    <ion-card-header>
+      ¡¡¡Felicitaciones!!!
+    </ion-card-header>
+    <ion-card-content>
+      <img class="imagenResultado" src="../assets/imgs/acertadopng.png" />
+      Has alcanzado la máxima puntuación
+    </ion-card-content>
+  </ion-card>
+  <!--Imagen, se muestra cuando tiene de 2 a 4 aciertos-->
+  <ion-card *ngIf="correcta >1 && correcta < 5">
+    <ion-card-header>
+      ¡¡¡Lo has hecho bien!!!
+    </ion-card-header>
+    <ion-card-content>
+      <img class="imagenResultado" src="../assets/imgs/triste.png" />
+      Has alcanzado una puntuación regular
+    </ion-card-content>
+  </ion-card>
+  <!--Imagen, se muestra cuando todas las operaciones básicas son incorrectas-->
+  <ion-card *ngIf="incorrecta>=4">
+    <ion-card-header>
+      ¡¡¡Deberás practicar más!!!
+    </ion-card-header>
+    <ion-card-content>
+      <img class="imagenResultado" src="../assets/imgs/pesimopng.png" />
+      Seguramente en el próximo intento lo harás mejor
+    </ion-card-content>
+  </ion-card>
+  <!--Imagen, spresenta todo los datos del juego-->
+  <article class="section2">
+    <h3>Puntaje: {{score}}</h3>
+    <h3>Tiempo: {{minutos}}:{{segundos}}</h3>
+    <h3>Jugador: {{nombre}}</h3>
+    <h3>Respuestas Correctas: {{correcta}}</h3>
+    <h3>Respuestas Incorrectas: {{incorrecta}}</h3>
+  </article>
+  <!--Botones para manipular la salida y reinicio del juego-->
+  <div class="section4">
+    <button ion-button block (click)="jugarOtra()">Reiniciar</button>
+    <button ion-button block (click)="goHomeF()">Salir</button>
+  </div>
+</ion-content>

@@ -1,0 +1,39 @@
+page-nivel {
+padding: 0;
+margin: 0;
+}
+//Estilos de NivelPage
+.homeN ion-icon{
+    text-align: left;
+    padding: 0px 0px;
+    font-size: 30px;
+}
+.iconH{
+    color: blue;
+}
+.bntH{
+
+   // background-color: white;
+   background-color: transparent !important;
+}
+.bodyNivel{
+    background-image: url("../assets/imgs/fondos.jpg")
+}
+ion-content h2{
+    font-size: 30px;
+}
+.niveles{
+    padding: 0px 0px 10px 10px;
+     height: 80%;
+     padding: 30px 0 15px;
+  }
+  .niveles button{
+      background-color: rgb(11, 172, 247);
+      color: rgb(231, 245, 245);
+      font-size:15pt;
+      height: 50px;
+  }
+  .niv{
+    padding: 12px 0px;
+    font:bold;
+}

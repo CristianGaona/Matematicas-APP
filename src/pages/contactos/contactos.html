@@ -1,0 +1,60 @@
+<!--
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Esta es la pagina sobre la información de las estudiantes que realizaron la aplicación
+-->
+<ion-header>
+
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <ion-navbar>
+    <ul>
+      <li class="men"><button ion-button menuToggle class="toggle">
+          <ion-icon name="menu"></ion-icon>
+        </button> </li>
+      <li class="titleMenu">
+        <ion-title>Contactos</ion-title>
+      </li>
+      <li class="home"><button (click)="goHome()" class="bntH">
+          <ion-icon name="home" class="iconH"></ion-icon>
+        </button></li>
+    </ul>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bodyContactos">
+  <section class="sectionC">
+    <div class="utplC">
+      <img class="utplCo" src="../assets/imgs/utplCont.png" alt="">
+    </div><br>
+    <span>
+      <h2><b>Desarrollador 1</b></h2>
+    </span>
+    <div class="desarrollador1">
+      <img src="../assets/imgs/desarrollador1.png" alt="">
+    </div>
+    <div class="textD1">
+      <p><b>Nombre:</b> Cristian Gaona<br>
+        <b>Institución:</b> UTPL<br>
+        <b>Twitter:</b> <a href="https://twitter.com/Crisda007">@Crisda007</a><br>
+        <b>Facebook:</b> <a href="https://www.facebook.com/niky.sanz"> Daniel Gaona</a><br>
+        <b>Correo:</b> cdgaona@utpl.edu.ec<br></p>
+    </div>
+    <br><br>
+    <span>
+      <h2><b>Desarrallador 2</b></h2>
+    </span>
+    <div class="textD2">
+      <p><b>Nombre:</b> Karla Ochoa<br>
+        <b>Institución:</b> UTPL<br>
+        <b>Twitter:</b> <a href="https://twitter.com/karlizbet">@karlizbet</a><br>
+        <b>Facebook:</b> <a href="https://www.facebook.com/karlita.ochoa.7"> Karlita Ochoa</a><br>
+        <b>Correo:</b> klochoa@utpl.edu.ec</p>
+    </div>
+    <div class="desarrollador2">
+      <img src="../assets/imgs/Desarrollador2.png" alt="">
+    </div><br>
+  </section>
+
+
+  <!--<button ion-button full (click)="goHome()">Volver a Home</button>-->
+</ion-content>

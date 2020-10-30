@@ -1,0 +1,56 @@
+<!--Inicio del header-->
+<ion-header>
+  <!--Consume una fuente de letra -->
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <ion-navbar>
+    <!-- <ion-title>
+    </ion-title>-->
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<!--Fin del header-->
+
+<!--Inicio del content-->
+<ion-content padding class="bodyHome">
+
+  <div id="encabezado">
+    <img src="../assets/imgs/logoescuela.png" alt="">
+  </div><br>
+  <!--Fin del encabezado-->
+
+  <!--Inicio del article-->
+  <article class="section">
+    <span>
+      <h2><b>Modo de Juego</b></h2>
+    </span>
+    <img src="../assets/imgs/niñosNum.png" alt="" id="kids">
+    <p class="parrP"><b>Adivina la respuesta de las operaciones matemáticas<br>¿Serás capaz de lograrlo?</b> </p>
+
+    <!--Inicio del avatar -->
+    <div id="avatar" class="section">
+      <img alt="" class="img-circle" src="../assets/imgs/animal.png">
+    </div>
+    <!--Inicio del avatar -->
+    <!--ngModel permite establecer un enlace con el campo del formulario con lo que se realiza 
+    en el método createMyForm(), esto permite validar el campo en caso que el usuario 
+    desee emprezar con el juego sin escribir su nombre-->
+    <input placeholder="Escriba su nombre..." type="text" [(ngModel)]="nombre" /><br />
+    <input (click)="nextPage()" type="submit" [disabled]="!nombre" class="submit" value="START"/>
+
+    <!--Fin del formulario -->
+  </article>
+  <!--Fin del article -->
+
+  <!--Inicio del footer -->
+  <footer>
+    <ul>
+      <li><img src="../assets/imgs/logo1.png" alt="https://www.utpl.edu.ec/"></li>
+      <li class="copyright"> <b>&copy; Copyright 2018. Universidad Técnica Particular de Loja</b></li>
+    </ul>
+  </footer>
+  <!--Fin del footer -->
+</ion-content>
+<!--Fin del content-->

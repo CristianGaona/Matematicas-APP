@@ -1,0 +1,51 @@
+page-final {
+padding: 0;
+margin: 0;
+
+}
+//Estilos css de la pagina FinalPage
+.bodyFinal{
+    background-image: url("../assets/imgs/fondos.jpg")
+}
+.imagenResultado{
+    margin:0 auto;
+    width: 30%;
+}
+.section2 {
+    background-color: rgb(243,111,72);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section2 input{
+    font-size: 10pt;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #03b6ec;
+    border-radius: 5px;
+    outline: none;
+    display: block;
+    text-align: center;
+    align-content: middle;
+}
+
+.section4 {
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section4 button{
+     font-size: 12pt;
+     border: 1px solid #cecece;
+     padding: 10px  0px;
+     color: #f0f6f7;
+     border-radius: 5px;
+     width: 30%;
+     height: 80px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+ 
+ }

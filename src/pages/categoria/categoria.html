@@ -1,0 +1,54 @@
+<!--Página para la sellecion de categorias del Juego-->
+<ion-header>
+    <!--API para consumir un estilo de letra desde la dirección indicada-->
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <ion-navbar>
+        <!--Lista desordenada que contien el bóton tres lineas, titulo y el icono home-->
+        <ul>
+            <li class="men"><button ion-button menuToggle class="toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </button> </li>
+            <li class="titleCat">
+                <ion-title>Categorias</ion-title>
+            </li>
+            <li class="home"><button (click)="goHomeC()" class="bntH">
+                    <ion-icon name="home" class="iconH"></ion-icon>
+                </button></li>
+
+        </ul>
+    </ion-navbar>
+
+</ion-header>
+<!--Cuerpo de la página -->
+<ion-content padding class="bodyCategoria">
+<!-- Contiene los botones para selccionar las categorias del juego-->
+    <article class="section">
+        <!--Titulo del cuerpo de la página-->
+        <span>
+            <h2><b>Seleccione Categoría</b></h2>
+        </span>
+        <div class="categorias">
+
+            <div class="cat1">
+                <button ion-button block icon-end round outline (click)="bntSuma()"> 
+                    <b>Suma</b>(<ion-icon name="add"></ion-icon>)</button>
+            </div>
+            <div class="cat1">
+                <button ion-button block icon-end round outline (click)="bntResta()">
+                    <b>Resta</b>(<ion-icon name="md-remove"></ion-icon>)</button>
+            </div>
+            <div class="cat1">
+                <button ion-button block icon-end round outline (click)="bntMultiplicacion()">
+                    <b>Multiplicación</b>(<ion-icon
+                        name="md-close"></ion-icon>)</button>
+            </div>
+            <div class="cat1">
+                <button ion-button block icon-end round outline (click)="bntMixta()">
+                    <b>Mixta</b> (<ion-icon name="add">,</ion-icon>
+                    <ion-icon name="md-remove">,</ion-icon>
+                    <ion-icon name="md-close"></ion-icon>)
+                </button>
+            </div>
+        </div>
+    </article>
+</ion-content>

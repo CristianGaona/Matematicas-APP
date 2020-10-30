@@ -1,0 +1,32 @@
+page-configuracion {
+    padding: 0;
+    margin: 0;
+}
+
+
+.botonInicio{
+    background-color:  #FF7433;
+    float:right;
+   
+}
+
+ion-navbar ul{
+    list-style: none;
+    //background-color: red;
+}
+
+ion-navbar ul{
+	display: table;
+    width: 100%;
+    height: 100%;
+	//background:  #FF7433;;
+	position: relative;
+}
+ion-navbar ul li{
+	display: table-cell;
+}
+
+ion-navbar ul li:hover ul{
+	display: block;
+	height: 100%; 
+}

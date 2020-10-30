@@ -1,0 +1,193 @@
+page-segunda {
+    padding: 0;
+    margin: 0;
+}
+
+ion-navbar ion-title,h1{
+    text-align-last: center;
+    color: #FF7433;
+    
+    }
+.homeS ion-icon{
+        text-align: left;
+        padding: 0px 0px;
+        font-size: 30px;
+    }
+    .iconH{
+        color: blue;
+    }
+    .bntH{
+
+       background-color: transparent !important;
+    }
+
+.s{
+    width: 50%;
+}
+.reloj{
+    width: 15%;
+    
+}
+.relojArena{
+    width: 100%;
+    margin: 0 auto;
+}
+.nino{
+    width: 15%;
+
+}
+.avatarS{
+    width: 90%;
+    margin: 0 auto;
+}
+.welcome h2{
+    border: 10px outset #20bcd5;
+}
+.welcome p{
+    text-align: center;
+    padding: 10px;
+}
+    ion-card{
+        border: 10px outset #20bcd5;
+        background-color: #03b6ec;
+        background: #03b6ec;
+        text-align: center;
+        height: 300;
+    }
+.contS{
+        font-size: 13pt;
+    }
+.bodySegunda{
+        background-image: url("../assets/imgs/fondos.jpg")
+    }
+.imagenAcertada{
+    margin:0 auto;
+    width: 70%;
+}
+    
+    .section1 {
+        background-color: rgb(243,111,72);
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .section1 input{
+        font-size: 19pt;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #03b6ec;
+        border-radius: 5px;
+        width: 30%;
+        outline: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .section1 .bloque1 button{
+         font-size: 30pt;
+         border: 1px solid #cecece;
+         padding: 50px 40px 30px;
+         color: #f0f6f7;
+         border-radius: 5px;
+         width: 35%;
+         outline: none;
+         display: inline-block;
+         text-align: center;
+     }
+.teacher img{
+    width: 50%;
+    margin:10px auto;
+	display:block;
+}
+     .alertaCorrecta{
+       // background-color: rgba(0, 0, 0, .85);
+        .alert-wrapper{
+            font-family: 'Merriweather', serif;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            text-shadow: 1.5px 1px #999;
+            text-align: center;
+            background-color: white;
+            border: 5px solid #03b6ec;
+            border-radius: 12px;
+            background-image: url('../../assets/imgs/fndFel.gif');
+            height: 400px;
+        }
+        
+        .alert-message {
+            color: black;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 80%;
+            margin: 0 auto;
+            height: 300px;
+            width: 100%;
+            font-family: 'Luckiest Guy';
+            font-size: 1.2em;
+        }
+        .alert-button{
+            background-color: #23E9E1;
+            text-align: center;
+            font-family: 'Luckiest Guy';
+            font-weight: bold;
+           // width: 100%;
+            font-size: 2.5em;
+            margin:10px auto;
+            display:block;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+        
+     }
+     .alertaIncorrecta{
+        // background-color: rgba(0, 0, 0, .85);
+         .alert-wrapper{
+             font-family: 'Merriweather', serif;
+             border: none;
+             display: flex;
+             justify-content: center;
+             align-content: center;
+             flex-direction: column;
+             text-shadow: 1.5px 1px #999;
+             text-align: center;
+             background-color: white;
+             border: 5px solid #03b6ec;
+             border-radius: 12px;
+             background-image: url('../../assets/imgs/lluvia.gif');
+             height: 400px;
+         }
+        
+         .alert-message {
+             color: black;
+             background-repeat: no-repeat;
+             background-position: top;
+             background-size: 80%;
+             margin: 0 auto;
+             height: 300px;
+             width: 100%;
+             font-family: 'Luckiest Guy';
+             font-size: 1.2em;
+         }
+         .alert-button{
+             background-color: #23E9E1;
+             text-align: center;
+             font-family: 'Luckiest Guy';
+             font-weight: bold;
+             //width: 100%;
+             font-size: 2.5em;
+             margin:10px auto;
+             display:block;
+             border: 2px solid red;
+             border-radius: 5px;
+         }
+         
+      }
+ 
+    
+       
+

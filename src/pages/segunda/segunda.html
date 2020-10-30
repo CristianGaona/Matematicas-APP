@@ -1,0 +1,80 @@
+<!--
+  Generated template for the SegundaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <ion-navbar>
+    <ion-title>
+    </ion-title>
+    <!--Lista no ordenada para mostrar el tiempo, el nombre del jugador, puntaje e intentos-->
+    <ul>
+      <li class="s">
+        <ion-icon class="reloj"><img class="relojArena" src="../assets/icon/Reg.png" alt=""></ion-icon>={{minutos}}:{{segundos}}
+      </li>
+      <li>Puntaje: {{score}}</li>
+
+      <li class="homeS"><button (click)="goHomeS()" class="bntH">
+          <ion-icon name="home" class="iconH"></ion-icon>
+        </button>
+
+      </li>
+    </ul>
+    <ul>
+      <li class="s">
+        <ion-icon class="nino"><img class="avatarS" src="../assets/icon/avatar.png" alt=""></ion-icon>= {{nombre}}
+      </li>
+      <li>Intentos: {{intento}}</li>
+    </ul>
+  </ion-navbar>
+
+</ion-header>
+<!--Cuerpo de la pagina en donde se muestran las operaciones matemáticas y retroalimentación del juego-->
+<ion-content padding class="bodySegunda">
+  <!--Mensaje de inicio-->
+  <div class="welcome">
+    <ion-card *ngIf="intento>0 && intento<6">
+      <ion-card-content class="contS">
+        Pongamos a prueba tus conocimientos matemáticos
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngIf="intento == 0">
+      <ion-card-content class="contS">
+        Ahora visualiza tu cuadro de resultados
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <article class="teacher" *ngIf="intento == 0">
+    <img src="../assets/imgs/teacher.png">
+  </article>
+
+  <!--Aqui se presentan las operaciones matemáticas con sus 4 opciones -->
+  <article class="section1" *ngIf="intento>0 && intento<6">
+    <input type="number" [(ngModel)]="num1" [disabled]="true" placeholder="Numero 1">
+    <input type="text" [(ngModel)]="signo" [disabled]="true" placeholder="Signo">
+    <input type="number" [(ngModel)]="num2" [disabled]="true" placeholder="Numero 2"><br>
+
+    <div class="bloque1">
+      <button [disabled]="controlIncorrecta" [disabled]="controlCorrecta" ion-button (click)="comprobarNumeroSumaBotones1()"
+        name="bnt1">{{bnt1}}</button>
+      <button [disabled]="controlIncorrecta" [disabled]="controlCorrecta" ion-button (click)="comprobarNumeroSumaBotones2()"
+        name="bnt2">{{bnt2}}</button>
+
+    </div>
+    <div class="bloque1">
+      <button [disabled]="controlIncorrecta" [disabled]="controlCorrecta" ion-button (click)="comprobarNumeroSumaBotones3()"
+        name="bnt3">{{bnt3}}</button>
+      <button [disabled]="controlIncorrecta" [disabled]="controlCorrecta" ion-button (click)="comprobarNumeroSumaBotones4()"
+        name="bnt4">{{bnt4}}</button>
+    </div>
+
+  </article>
+
+  <!--Estos botones aparecen si se cumeple con la condición requerida-->
+  <!-- <button *ngIf="bandera == true && intento > 0" ion-button block round  (click)="reinicia1()">Siguiente</button>-->
+ <!-- <button id="bntNextFin" *ngIf="bandera == true && intento > 0" ion-button block round (click)="reinicia1()">Siguiente</button>-->
+  <button id="bntNextFin" *ngIf="intento == 0" ion-button block (click)="finalizar()">Ver Resultados ></button>
+</ion-content>
